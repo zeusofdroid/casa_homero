@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>HOME | CASA HOMERO</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="slider/sss.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="slider/sss.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Casa Homero</h1>
+			<h3>Materiales Eléctricos S.R.L.</h3>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="catalogo.php">Catálogo</a></li>
+				<li><a href="html/servicios.html">Servicios</a></li>
+				<li><a href="html/contacto.html">Contacto</a></li>
+				<li><a href="html/form_login.html">Login</a></li>
+			</ul>
+		</nav>
+		<section id="principal">
+			<h1>¿Quiénes somos?</h1>
+			<p>Somos una empresa que crece y evoluciona al ritmo de las
+				exigencias de hoy. Buscamos satisfacer a nuestro mercado ofreciendo
+				no solo calidad en el producto, sino también todo el compromiso de
+				nuestro personal para llegar a nuestros clientes y así tratar de
+				satisfacerlos.</p>
+
+			<div id="slideWrapp">
+				<div class="slider">
+					<img src="imagenes/img_001.jpg" width="320px" height="172px">
+					<img src="imagenes/img_002.jpg" width="320px" height="172px">
+					<img src="imagenes/img_003.jpg" width="320px" height="172px">
+					<img src="imagenes/img_004.jpg" width="320px" height="172px">
+					<img src="imagenes/img_005.jpg" width="320px" height="172px">
+					<img src="imagenes/img_006.jpg" width="320px" height="172px">
+					<img src="imagenes/img_007.png" width="320px" height="172px">
+				</div>
+			</div>
+
+
+			<p>Nos ocupamos de seleccionar productos de calidad. Ponemos a su
+				alcance la mejor tecnología. Nuestro personal permanece en constante
+				capacitación manteniéndose actualizado, logrando así un
+				asesoramiento profesional.</p>
+		</section>
+		<footer>
+			<p>
+				&copy; 2016 - www.casahomero.com - <span id="destacado">Todos
+					los derechos reservados</span>
+			</p>
+		</footer>
+	</div>
+	<!--fin wrapper-->
+
+	<script>
+		$(document).ready(function() {
+
+			$('.slider').sss();
+		});
+	</script>
+</body>
+</html>

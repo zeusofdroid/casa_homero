@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<style>
+h3{
+	margin-bottom:30px
+}
+
+form{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%)
+}
+
+</style>
+</head>
+<body>
+	<form name="frmlogin" accept-charset="utf-8" method="POST" action="../php/login.php" class="form-horizontal" role="form">
+		<h3 class="text-center">INGRESO DE USUARIO</h3>
+		<div class="form-group">
+			<label>Usuario o E-mail:</label>
+			<input type="text" name="user" tabindex="1" placeholder="Usuario" required maxlength="80" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Contraseña:</label>
+			<input type="password" name="password" tabindex="2" placeholder="Contraseña" required maxlength="20" class="form-control">
+		</div>
+		<div class="form-group text-center">
+			<input type="submit" tabindex="3" class="btn btn-lg btn-success btn-block" role="button" value='Ingresar'>
+		</div>
+	</form>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

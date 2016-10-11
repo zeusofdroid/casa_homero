@@ -1,0 +1,107 @@
+/*comentario*/
+/*fecha de modificacion 21/04/2016*/
+header {
+	text-align: center;
+	background-color: #9dc4c6;
+	padding: 5px 15px 0px 15px;
+	height: 90px;
+	color: #fff;
+}
+
+#wrapper {
+	margin: auto;
+	width: 860px;
+	border: 1px solid #c3c3c3;
+	padding: 5px;
+}
+
+body {
+	font-family: verdana, arial, sans-serif;
+}
+
+h1 {
+	margin: 0;
+	margin-top: 5px;
+}
+
+nav {
+	float: left;
+	background-color: #689b9e;
+	width: 160px;
+	height: 400px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-left: -15px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 1.8em;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+	color: #032;
+}
+
+#principal {
+	background-color: #d4fde1;
+	float: right;
+	width: 680px;
+	padding: 0 10px 0 10px;
+	height: 400px;
+}
+
+#principal h1 {
+	text-align: center;
+	padding: 0 0 10px 0;
+	/*  tambien se puede aplicar display-bloc 
+	sobre la tabla para que se comporte como 
+	bloque y poder aplicar el padding*/
+}
+/*fecha de modificacion 26/04/2016*/
+footer {
+	clear: left;
+	background-color: #497a7a;
+	width: 850px;
+	height: 50px;
+	padding: 5px 0 0 10px;
+	text-align: center;
+}
+
+footer p {
+	font-size: 12px;
+	line-height: 0.8em;
+	color: #fff;
+}
+
+#destacado {
+	font-weight: bold;
+}
+
+.centrar {
+	text-align: center;
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid #ccc;
+}
+
+.descripcion-col {
+	color: #fff;
+	background-color: #000;
+}
+
+#slideWrapp {
+	margin: 0px auto;
+	width: 320px;
+	height: 172px;
+}

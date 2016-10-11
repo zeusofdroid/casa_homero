@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>HOME | CASA HOMERO</title>
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Casa Homero</h1>
+			<h3>Materiales Eléctricos S.R.L.</h3>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="catalogo.php">Catálogo</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="form_login.html">Login</a></li>
+			</ul>
+		</nav>
+		<section id="principal">
+			<h1 style="color: #000; text-align: center">Solicitud de Información</h1>
+			<br>
+			<form method="post" action="../php/send.php" accept-charset="utf-8">
+				<table>
+					<tbody>
+						<tr>
+							<td><label>Nombre : (*) </label></td>
+							<td><input type="text" name="nombre" id="nombre" size="40"
+								required></td>
+						</tr>
+						<tr>
+							<td><label>Empresa : </label></td>
+							<td><input type="text" name="empresa" id="empresa" size="30"></td>
+						</tr>
+						<tr>
+							<td><label>E-Mail : (*)</label></td>
+							<td><input type="text" name="mail" id="mail" size="50"
+								required></td>
+						</tr>
+						<tr>
+							<td><label>Consulta : (*)</label></td>
+							<td><textarea rows="6.5" cols="60" id="mensaje"
+									name="mensaje" required></textarea></td>
+						</tr>
+						<tr>
+							<td><input style="float: right" type="checkbox"
+								name="novedades"></td>
+							<td>¿Desea recibir información como novedades y promociones
+								en su correo electrónico?</td>
+						</tr>
+						<tr>
+							<td><label>Ingrese el codigo : (*) </label></td>
+							<td><img src="../includes/captcha.php"><br>
+							<input name="captcha" type="text"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" name="enviar" id="enviar"
+								value="Enviar Solicitud"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</section>
+		<footer>
+			<p>
+				&copy; 2016 - www.casahomero.com - <span id="destacado">Todos
+					los derechos reservados</span>
+			</p>
+		</footer>
+	</div>
+	<!--fin wrapper-->
+
+	<script>
+		$(document).ready(function() {
+
+			$('.slider').sss();
+		});
+	</script>
+</body>
+</html>

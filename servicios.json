@@ -1,0 +1,9 @@
+{
+"prestaciones":
+[
+{"nombre":"Arreglos","descripcion":"Reparaciones de electrodomèsticos (presupuestos sin cargo)"},
+{"nombre":"Instalaciones","descripcion":"Instalaciones domiciliarias, materiales incluidos"},
+{"nombre":"Envìos express","descripcion":"Envìos a domicilio en 24 hs (sin costo alguno)"},
+{"nombre":"Asesoramiento","descripcion":"Resolvemos cualquier duda tècnica"}
+]
+}
