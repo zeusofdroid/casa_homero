@@ -2,62 +2,66 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>HOME | CASA HOMERO</title>
-<link href="../css/style.css" rel="stylesheet">
-<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<style>
+h3{
+	margin-bottom:30px
+}
+
+form{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%)
+}
+</style>
 </head>
 <body>
-	<div id="wrapper">
-		<header>
-			<h1>Casa Homero</h1>
-			<h3>Materiales Eléctricos S.R.L.</h3>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="catalogo.php">Catálogo</a></li>
-				<li><a href="servicios.html">Servicios</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="form_login.html">Login</a></li>
-			</ul>
-		</nav>
-
-		<section id="principal">
-			<h1>Agregar productos</h1>
-<!-- usando emmet:  
-	 		form:post>table>tbody>(tr>td*2)*4 -->
-	 		<form action="" method="post">
-	 			<table>
-	 				<tbody>
-	 					<tr>
-	 						<td>label</td>
-	 						<td>input</td>
-	 					</tr>
-	 					<tr>
-	 						<td></td>
-	 						<td></td>
-	 					</tr>
-	 					<tr>
-	 						<td></td>
-	 						<td></td>
-	 					</tr>
-	 					<tr>
-	 						<td></td>
-	 						<td></td>
-	 					</tr>
-	 				</tbody>
-	 			</table>
-	 		</form>
-		</section>
-
-		<footer>
-			<p>
-				&copy; 2016 - www.casahomero.com - <span id="destacado">Todos
-					los derechos reservados</span>
-			</p>
-		</footer>
-
-	</div>
-	<!--fin wrapper-->
+	<h1>Agregar productos</h1>
+	<form class="form-horizontal" method="post" name="ingreso_productos" action="save_productos" accept-charset="utf-8">
+		<div class="form-group">
+			<label class="control-label col-md-3">Description:</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" placeholder="Descripcion" name="descripcion">
+			</div>
+			<!-- Lo anterior es igual a poner:
+			<label class="control-label col-md3">Description:</label>
+			<input type="text" class="form-control col-md-9" placeholder="Descripcion" name="descripcion">
+			(Nota: el div que se puso de más fue porque el profe había puesto otra cosa más además del input, y quería que las 9 columnas restantes las usen los dos elementos. En la versión que nos mostró a nostros sólo hay un elemento que es el input, así que no tiene sentido hacer el div. Lo dejo porque creo que después nos va a pasar el otro parámetro que va dentro de ese div. Sin embargo, probé sin poner ese div y visualmente me queda distinto, no sé por qué -y Claudio tampoco sabe-)
+			 -->
+		</div>
+		<div class="form-group">
+			<label class="control-label col-md-3">Cantidad:</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" placeholder="Cantidad" name="cantidad">
+			</div>
+		</div>	
+		<div class="form-group">
+			<label class="control-label col-md-3">Precio:</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control col-md-9" placeholder="Precio" name="precio">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-md-3">Categorias:</label>
+			<div class="col-md-9">
+				<select class="form-control col-md-9" name="categorias">
+					<option value="1">herramientas manuales</option>	<!-- el valor de los "value" se deben corresponder con las primary keys de la tabla "categorías" de nuestra base de datos -->
+					<option value="2">herramientas eléctricas</option>
+					<option value="3">elementos de bulonería</option>
+				</select>
+			</div>	
+		</div>
+		<div class="form-group">
+			<div class="col-md-3"></div>
+		  	<div class="col-md-9">		
+  				<button type="submit" class="btn btn-primary ">Agregar</button>
+			</div>		
+		</div>
+	</form>
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>	
 </body>
 </html>
