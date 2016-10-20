@@ -6,8 +6,8 @@ echo 'Bienvenido '.$_SESSION['username'];
 echo '<br>';
 echo 'Horario de Conexión: '.$_SESSION['time'];
 echo '<br>';
-echo "<a href='logout.php'> Logout </a>";  //Me faltaba agregarlo de una clase anterior, cuando creamos "logout.php"
+echo "<a href='logout.php'> Logout </a>";
 echo "<h1 style='text-align:center'> Menu de opciones </h1>";
-echo "<a href='../html/insert_productos.html'> Ingresar nuevos productos </a>";
+echo "<a href='insert_productos.php'> Ingresar nuevos productos </a>";
 }
 ?>
