@@ -46,7 +46,7 @@ a {
 	$con->close();
 	echo "<div id='caja'>";
 		echo "<h3>¡Producto almacenado correctamente!</h3>";
-		echo "<a class='btn btn-primary' href='../html/insert_productos.html'>Ingresar un Nuevo Producto</a>";
+		echo "<a class='btn btn-primary' href='insert_productos.php'>Ingresar un Nuevo Producto</a>";
 		echo "<br>";
 		echo "<br>";
 		echo "<a class='btn btn_primary' href='welcome.php'>Salir</a>";

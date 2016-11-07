@@ -9,5 +9,8 @@ echo '<br>';
 echo "<a href='logout.php'> Logout </a>";
 echo "<h1 style='text-align:center'> Menu de opciones </h1>";
 echo "<a href='insert_productos.php'> Ingresar nuevos productos </a>";
+echo "<br>";
+echo "<a href='list_productos.php'> Listar productos </a>";
+
 }
 ?>
