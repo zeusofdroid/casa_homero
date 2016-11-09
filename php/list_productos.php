@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Listado de productos</title>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <script>
 	function deleteProducto(id){
@@ -10,6 +9,11 @@
 			document.location.href = 'delete_producto.php?id=' + id;
 		}
 	}
+
+	function updateProducto(id){
+			document.location.href = 'update_producto.php?id=' + id;
+	}
+	
 </script>
 <style>
 	.jumbotron {
@@ -44,11 +48,12 @@
 						<th>Cantidad</th>
 						<th>Categoria</th>
 						<th>Eliminar</th>
+						<th>Actualizar</th>
 					</tr>
 				</thead>
 				<tbody>
 					<?php 
-						while ($row=$result->fetch_row())	// El while chequea si $row es verdadero o falso (será verdadero cada vez que encuentre una línea, cuando no haya más líneas será falso)
+						while ($row=$result->fetch_row())	// El while chequea si $row es verdadero o falso (ser� verdadero cada vez que encuentre una l�nea, cuando no haya m�s l�neas ser� falso)
 						{
 						  echo "<tr>";			
 						  foreach ($row as $valor){	//el foreach  con el while voy trayendo filas, con el foreach articulo las lineas
@@ -61,9 +66,16 @@
 								<a href="#" onclick="deleteProducto('<?php echo $row[0];?>')">Eliminar Producto</a>
 					<?php 
 							 echo "</td>";
+							 echo "<td>";
+					?>
+							 	<a href="#" onclick="updateProducto('<?php echo $row[0];?>')">Actualizar Producto</a>
+					
+					<?php	
+							 echo "</td>";
 						  echo "</tr>";
 						}
 					?>
+					
 				</tbody>
 			</table>
 		</div>
